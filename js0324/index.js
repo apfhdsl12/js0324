@@ -69,26 +69,156 @@
 
 // 스코프 (유효범위)
 
-var a = 7  // 전역 변수 (유효범위는 함수내, 함수외.)
+// var a = 7  // 전역 변수 (유효범위는 함수내, 함수외.)
 
-function test(){
-    var b = 3; // 지역 변수 (유효범위는 함수 내에서만.)
-    console.log(a);
-    console.log(b);
-}
+// function test(){
+//     var b = 3; // 지역 변수 (유효범위는 함수 내에서만.)
+//     console.log(a);
+//     console.log(b);
+// }
 
-test();
+// test();
 
-console.log(a);
-
-
-
-
-
-
+// console.log(a);
 
 
 
 
 
 // 실행 컨텍스트
+
+
+//배열 뿌수기 (초기화, 읽기, 추가, 삭제)
+
+// //         0  1  2  3
+// var arr = [4, 3, 8, 7];
+
+// // console.log(arr[2]); 배열 읽기
+
+// arr.push(80); // 배열 추가
+
+// // console.log(arr);
+
+// arr.splice(3 , 1); // 배열 삭제(인덱스가 3부터 1개 삭제)
+
+// // console.log(arr);
+
+// for(var i = 0; i< arr.length; i++){
+//     //만약에 아이템중에 3이 있으면 곱하기 2를 해서 출력하라 , 배열 변화
+//     // console.log(arr[i]);
+//     if(arr[i]==3){
+//         console.log(arr[i]*2);
+//     }else{
+//         console.log(arr[i]);
+//     }
+// }
+
+
+//User라는 생성자 함수를 사용해서 name은 jack age는 20인 객체를 만들어보세요
+
+//name이 jack인 객체를 users안에 넣어보세요 push를 활용해서
+
+//User라는 생성자 함수를 사용해서 name이 joy이고 age가 21인 객체를 만들고 users안에 넣어보세요
+
+//User라는 생성자 함수를 사용해서 name이 jason이고 age가 26인 객체를 만들고 users안에 넣어보세요
+
+//for문을 사용해서 users에 있는 user들을 출력해보세요.
+
+// var users = []
+
+// var User = [{
+//     name:'jack',
+//     age: 20},
+//     {name:'joy',
+//     age: 21},
+//     {name:'jason',
+//     age:26}
+// ]
+
+
+// users.push(User);
+
+// console.log(users);
+
+// var users = []
+
+// var User = {
+//     name:'jack',
+//     age:20
+// }
+
+// users.push(User);
+
+// var User = {
+//     name:'joy',
+//     age:21
+// }
+
+// users.push(User);
+
+// var User = {
+//     name:'jason',
+//     age:26
+// }
+
+// users.push(User);
+
+// // console.log(users);
+
+// for(var i=0; i< Array.length; i++){
+//     console.log(users);
+// }
+
+// var users = []
+
+// function User(name, age){
+//     this.name = name;
+//     this.age = age;
+// }
+
+// users.push(new User('jack',20));
+// users.push(new User('joy',21));
+// users.push(new User('jason',26));
+
+// for(var i=0; i<users.length; i++){
+//     console.log(users[i]);
+// }
+
+// var sum = 0;
+// var avg = 0;
+
+//users 안에있는 유저들의 평균나이를 구하고 출력하세요 (for문 사용)
+//평균은 n개의 값을 다 더한 뒤에 n으로 나누면 됩니다.
+
+// for(var i = 0; i<users.length; i++){
+//     sum = sum + users[i].age;
+// }
+
+// avg = sum / users.length;
+
+// console.log(avg);
+
+
+//users를 사용해서 name이 joy인 user의 나이를 25로 변경하세요
+
+// for(var i =0; i<users.length; i++){
+//     if(users[i].name=='joy'){
+//         users[i].age= 25;
+//     }
+// }
+
+// console.log(users);
+
+
+
+//users안에서 name이 jason인 user를 삭제 해보세요
+
+// for(var i =0; i<users.length; i++){
+//     if(users[i].name === 'jason'){
+//         users.splice(i,1);
+//     }
+// }
+
+// console.log(users);
+
+
